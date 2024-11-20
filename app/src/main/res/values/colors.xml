@@ -2,4 +2,13 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="section_1_color">#8FD47E</color>
+    <color name="section_1_button_text_color">#489834</color>
+
+    <color name="section_2_color">#FF9E30</color>
+    <color name="section_2_button_text_color">#BF6C0E</color>
+
+    <color name="section_3_color">#6269FC</color>
+    <color name="section_3_button_text_color">#454DE4</color>
 </resources>
