@@ -11,4 +11,11 @@
 
     <color name="section_3_color">#6269FC</color>
     <color name="section_3_button_text_color">#454DE4</color>
+
+    <color name="subsection_1_color">#E05C5C</color>
+    <color name="subsection_2_color">#6269FC</color>
+    <color name="subsection_3_color">#BF6C0E</color>
+    <color name="subsection_1_background_color">#FFFFFF</color>
+
+    <color name="background_color">#FFFFFF</color>
 </resources>

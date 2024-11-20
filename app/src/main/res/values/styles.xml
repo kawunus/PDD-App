@@ -37,4 +37,43 @@
         <item name="android:layout_marginTop">16dp</item>
         <item name="android:layout_marginEnd">17dp</item>
     </style>
+
+    <style name="SubsectionCardViewStyle" parent="Widget.MaterialComponents.CardView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">9dp</item>
+    </style>
+
+    <style name="SubsectionConstraintLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="SubsectionTitleTextViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">14dp</item>
+        <item name="android:layout_marginTop">19dp</item>
+        <item name="android:fontFamily">@font/inter_font</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="SubsectionSubtitleTextViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:layout_marginBottom">14dp</item>
+        <item name="android:fontFamily">@font/inter_font_medium</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="SubsectionButtonStyle">
+        <item name="fontFamily">@font/inter_font</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">16dp</item>
+    </style>
+
 </resources>

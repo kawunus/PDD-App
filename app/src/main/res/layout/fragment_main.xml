@@ -1,156 +1,302 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/leftBorder"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="16dp" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/rightBorder"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_end="16dp" />
-
-    <TextView
-        android:id="@+id/titleTextView"
-        style="@style/TitleTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16sp"
-        android:text="@string/main_title"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="@id/leftBorder"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/sectionCard1"
-        style="@style/SectionCardStyle"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="@color/section_1_color"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="@id/rightBorder"
-        app:layout_constraintStart_toStartOf="@id/leftBorder"
-        app:layout_constraintTop_toBottomOf="@id/titleTextView">
-
-        <LinearLayout
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/leftBorder"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingStart="19dp"
-            android:paddingTop="17dp"
-            android:paddingEnd="40dp"
-            android:paddingBottom="14dp">
+            app:layout_constraintGuide_begin="16dp" />
 
-            <TextView
-                style="@style/SectionTitleTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/main_section_1_title" />
-
-            <TextView
-                style="@style/SubtitleTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/main_section_1_subtitle" />
-
-            <Button
-                style="@style/SectionButton"
-                android:text="@string/main_section_1_button"
-                android:textColor="@color/section_1_button_text_color" />
-        </LinearLayout>
-
-        <ImageView
-            style="@style/SectionImageView"
-            android:src="@drawable/ic_hat" />
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/sectionCard2"
-        style="@style/SectionCardStyle"
-        android:backgroundTint="@color/section_2_color"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="@id/rightBorder"
-        app:layout_constraintStart_toStartOf="@id/leftBorder"
-        app:layout_constraintTop_toBottomOf="@id/sectionCard1">
-
-        <LinearLayout
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/rightBorder"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingStart="19dp"
-            android:paddingTop="17dp"
-            android:paddingEnd="40dp"
-            android:paddingBottom="14dp">
+            app:layout_constraintGuide_end="16dp" />
 
-            <TextView
-                style="@style/SectionTitleTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/main_section_2_title" />
-
-            <TextView
-                style="@style/SubtitleTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/main_section_2_subtitle" />
-
-            <Button
-                style="@style/SectionButton"
-                android:text="@string/main_section_2_button"
-                android:textColor="@color/section_2_button_text_color" />
-        </LinearLayout>
-
-        <ImageView
-            style="@style/SectionImageView"
-            android:src="@drawable/ic_cards" />
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/sectionCard3"
-        style="@style/SectionCardStyle"
-        android:backgroundTint="@color/section_3_color"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="@id/rightBorder"
-        app:layout_constraintStart_toStartOf="@id/leftBorder"
-        app:layout_constraintTop_toBottomOf="@id/sectionCard2">
-
-        <LinearLayout
+        <TextView
+            android:id="@+id/titleTextView"
+            style="@style/TitleTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingStart="19dp"
-            android:paddingTop="17dp"
-            android:paddingEnd="40dp"
-            android:paddingBottom="14dp">
+            android:layout_marginTop="16sp"
+            android:text="@string/main_title"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@id/leftBorder"
+            app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                style="@style/SectionTitleTextView"
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/sectionCard1"
+            style="@style/SectionCardStyle"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/section_1_color"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@id/rightBorder"
+            app:layout_constraintStart_toStartOf="@id/leftBorder"
+            app:layout_constraintTop_toBottomOf="@id/titleTextView">
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/main_section_3_title" />
+                android:orientation="vertical"
+                android:paddingStart="19dp"
+                android:paddingTop="17dp"
+                android:paddingEnd="40dp"
+                android:paddingBottom="14dp">
 
-            <TextView
-                style="@style/SubtitleTextView"
+                <TextView
+                    style="@style/SectionTitleTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/main_section_1_title" />
+
+                <TextView
+                    style="@style/SubtitleTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/main_section_1_subtitle" />
+
+                <Button
+                    style="@style/SectionButton"
+                    android:text="@string/main_section_1_button"
+                    android:textColor="@color/section_1_button_text_color" />
+            </LinearLayout>
+
+            <ImageView
+                style="@style/SectionImageView"
+                android:src="@drawable/ic_hat" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/sectionCard2"
+            style="@style/SectionCardStyle"
+            android:backgroundTint="@color/section_2_color"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@id/rightBorder"
+            app:layout_constraintStart_toStartOf="@id/leftBorder"
+            app:layout_constraintTop_toBottomOf="@id/sectionCard1">
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/main_section_3_subtitle" />
+                android:orientation="vertical"
+                android:paddingStart="19dp"
+                android:paddingTop="17dp"
+                android:paddingEnd="40dp"
+                android:paddingBottom="14dp">
 
-            <Button
-                style="@style/SectionButton"
-                android:text="@string/main_section_3_button"
-                android:textColor="@color/section_3_button_text_color" />
-        </LinearLayout>
+                <TextView
+                    style="@style/SectionTitleTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/main_section_2_title" />
 
-        <ImageView
-            style="@style/SectionImageView"
-            android:src="@drawable/ic_question" />
-    </androidx.cardview.widget.CardView>
+                <TextView
+                    style="@style/SubtitleTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/main_section_2_subtitle" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+                <Button
+                    style="@style/SectionButton"
+                    android:text="@string/main_section_2_button"
+                    android:textColor="@color/section_2_button_text_color" />
+            </LinearLayout>
+
+            <ImageView
+                style="@style/SectionImageView"
+                android:src="@drawable/ic_cards" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/sectionCard3"
+            style="@style/SectionCardStyle"
+            android:backgroundTint="@color/section_3_color"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@id/rightBorder"
+            app:layout_constraintStart_toStartOf="@id/leftBorder"
+            app:layout_constraintTop_toBottomOf="@id/sectionCard2">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="19dp"
+                android:paddingTop="17dp"
+                android:paddingEnd="40dp"
+                android:paddingBottom="14dp">
+
+                <TextView
+                    style="@style/SectionTitleTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/main_section_3_title" />
+
+                <TextView
+                    style="@style/SubtitleTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/main_section_3_subtitle" />
+
+                <Button
+                    style="@style/SectionButton"
+                    android:text="@string/main_section_3_button"
+                    android:textColor="@color/section_3_button_text_color" />
+            </LinearLayout>
+
+            <ImageView
+                style="@style/SectionImageView"
+                android:src="@drawable/ic_question" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/subtitleTextView"
+            style="@style/TitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16sp"
+            android:text="@string/main_additional_sections"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@id/leftBorder"
+            app:layout_constraintTop_toBottomOf="@id/sectionCard3" />
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/subsection_card_1"
+            style="@style/SubsectionCardViewStyle"
+            app:cardBackgroundColor="@color/subsection_1_background_color"
+            app:layout_constraintEnd_toEndOf="@id/rightBorder"
+            app:layout_constraintStart_toStartOf="@id/leftBorder"
+            app:layout_constraintTop_toBottomOf="@id/subtitleTextView"
+            app:strokeColor="#E05C5C"
+            app:strokeWidth="2dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout style="@style/SubsectionConstraintLayoutStyle">
+
+                <TextView
+                    android:id="@+id/subsection_title_1"
+                    style="@style/SubsectionTitleTextViewStyle"
+                    android:text="@string/main_subsection_1_title"
+                    android:textColor="@color/subsection_1_color"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/SubsectionSubtitleTextViewStyle"
+                    android:text="@string/main_subsection_1_subtitle"
+                    android:textColor="@color/subsection_1_color"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/subsection_title_1"
+                    app:layout_constraintTop_toBottomOf="@id/subsection_title_1" />
+
+                <Button
+                    android:id="@+id/subsectionButton1"
+                    style="@style/SubsectionButtonStyle"
+                    android:backgroundTint="@color/subsection_1_color"
+                    android:text="@string/main_subsection_1_button"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/textView2"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/subsection_card_2"
+            style="@style/SubsectionCardViewStyle"
+            app:cardBackgroundColor="@color/subsection_1_background_color"
+            app:layout_constraintEnd_toEndOf="@id/rightBorder"
+            app:layout_constraintStart_toStartOf="@id/leftBorder"
+            app:layout_constraintTop_toBottomOf="@id/subsection_card_1"
+            app:strokeColor="#6269FC"
+            app:strokeWidth="2dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout style="@style/SubsectionConstraintLayoutStyle">
+
+                <TextView
+                    android:id="@+id/subsection_title_2"
+                    style="@style/SubsectionTitleTextViewStyle"
+                    android:text="@string/main_subsection_2_title"
+                    android:textColor="@color/subsection_2_color"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    style="@style/SubsectionSubtitleTextViewStyle"
+                    android:text="@string/main_subsection_2_subtitle"
+                    android:textColor="@color/subsection_2_color"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/subsection_title_2"
+                    app:layout_constraintTop_toBottomOf="@id/subsection_title_2" />
+
+                <Button
+                    android:id="@+id/subsectionButton2"
+                    style="@style/SubsectionButtonStyle"
+                    android:layout_marginStart="6dp"
+                    android:backgroundTint="@color/subsection_2_color"
+                    android:text="@string/main_subsection_2_button"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/textView"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/subsection_card_3"
+            style="@style/SubsectionCardViewStyle"
+            app:cardBackgroundColor="@color/subsection_1_background_color"
+            app:layout_constraintEnd_toEndOf="@id/rightBorder"
+            app:layout_constraintStart_toStartOf="@id/leftBorder"
+            app:layout_constraintTop_toBottomOf="@id/subsection_card_2"
+            app:strokeColor="#BF6C0E"
+            app:strokeWidth="2dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout style="@style/SubsectionConstraintLayoutStyle">
+
+                <TextView
+                    android:id="@+id/subsection_title_3"
+                    style="@style/SubsectionTitleTextViewStyle"
+                    android:text="@string/main_subsection_3_title"
+                    android:textColor="@color/subsection_3_color"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    style="@style/SubsectionSubtitleTextViewStyle"
+                    android:text="@string/main_subsection_2_subtitle"
+                    android:textColor="@color/subsection_3_color"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/subsection_title_3"
+                    app:layout_constraintTop_toBottomOf="@id/subsection_title_3" />
+
+                <Button
+                    android:id="@+id/subsectionButton3"
+                    style="@style/SubsectionButtonStyle"
+                    android:layout_marginStart="6dp"
+                    android:backgroundTint="@color/subsection_3_color"
+                    android:text="@string/main_subsection_3_button"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/subsection_title_3"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

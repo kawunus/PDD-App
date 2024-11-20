@@ -14,14 +14,14 @@
     <string name="main_section_3_button">Выбрать тему</string>
     <string name="main_additional_sections">Дополнительные разделы</string>
     <string name="main_subsection_1_title">ПДД и знаки</string>
-    <string name="main_subsection_1_subtitle">Все правила и дорожные знаки</string>
+    <string name="main_subsection_1_subtitle">Все правила и дорожные\nзнаки</string>
     <string name="main_subsection_1_button">ПДД и знаки</string>
     <string name="main_subsection_2_title">Мои ошибки</string>
-    <string name="main_subsection_2_subtitle">Анализируй свои ошибки и улучшай результат</string>
-    <string name="main_subsection_2_button">Посмотреть ошибки</string>
+    <string name="main_subsection_2_subtitle">Анализируй свои ошибки\nи улучшай результат</string>
+    <string name="main_subsection_2_button">Посмотреть\nошибки</string>
     <string name="main_subsection_3_title">Избранные вопросы</string>
-    <string name="main_subsection_3_subtitle">Сохрани важные вопросы для повторения</string>
-    <string name="main_subsection_3_button">Избранные вопросы</string>
+    <string name="main_subsection_3_subtitle">Сохрани важные вопросы\nдля повторения</string>
+    <string name="main_subsection_3_button">Избранные\nвопросы</string>
     <string name="main_subsection_4_title">Статистика</string>
     <string name="main_subsection_4_button">Перейти</string>
 </resources>
