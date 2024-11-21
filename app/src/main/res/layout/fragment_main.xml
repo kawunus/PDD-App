@@ -298,5 +298,40 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
         </com.google.android.material.card.MaterialCardView>
 
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/subsection_card_4"
+            style="@style/SubsectionCardViewStyle"
+            app:cardBackgroundColor="@color/subsection_1_background_color"
+            app:layout_constraintEnd_toEndOf="@id/rightBorder"
+            app:layout_constraintStart_toStartOf="@id/leftBorder"
+            app:layout_constraintTop_toBottomOf="@id/subsection_card_3"
+            app:strokeColor="#489834"
+            app:strokeWidth="2dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout style="@style/SubsectionConstraintLayoutStyle">
+
+                <TextView
+                    android:id="@+id/subsection_title_4"
+                    style="@style/SubsectionTitleTextViewStyle"
+                    android:text="@string/main_subsection_4_title"
+                    android:textColor="@color/subsection_4_color"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginBottom="19dp"/>
+
+                <Button
+                    android:id="@+id/subsectionButton4"
+                    style="@style/SubsectionButtonStyle"
+                    android:layout_marginStart="6dp"
+                    android:backgroundTint="@color/subsection_4_color"
+                    android:text="@string/main_subsection_4_button"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/subsection_title_4"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
