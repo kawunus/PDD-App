@@ -19,4 +19,6 @@
     <color name="subsection_1_background_color">#FFFFFF</color>
 
     <color name="background_color">#FFFFFF</color>
+
+    <color name="ticker_item_color">#FF9E30</color>
 </resources>

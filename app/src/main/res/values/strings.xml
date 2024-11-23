@@ -24,4 +24,11 @@
     <string name="main_subsection_3_button">Избранные\nвопросы</string>
     <string name="main_subsection_4_title">Статистика</string>
     <string name="main_subsection_4_button">Перейти</string>
+
+    <!-- Tickets Screen -->
+    <string name="tickets_title">Билеты ПДД</string>
+    <string name="tickets_all_topics">Все темы</string>
+    <string name="tickets_item_number_placeholder">№1</string>
+    <string name="tickets_item_progress_placeholder">0 из 20</string>
+    <string name="tickets_item_subtitle_placeholder">Вопросов решено</string>
 </resources>

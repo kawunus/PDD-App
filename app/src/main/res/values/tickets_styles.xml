@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TitleTextView" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">20sp</item>
+        <item name="fontFamily">@font/inter_font</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="SubtitleTicketsTextView" parent="Widget.AppCompat.TextView">
+        <item name="fontFamily">@font/inter_font_medium</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+</resources>

@@ -1,4 +1,4 @@
-package com.kawunus.pddapp.presentation.ui
+package com.kawunus.pddapp.presentation.main.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
