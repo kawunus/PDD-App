@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:navigationIcon="@drawable/ic_arrow_back"
         android:title="@string/tickets_title"
-        android:titleTextAppearance="@style/TitleTextView"
+        android:titleTextAppearance="@style/TitleTicketsTextView"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
